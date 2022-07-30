@@ -1,0 +1,33 @@
+.section {
+    padding: 60px 0 60px 0;
+    
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0 94px 0;
+    }
+}
+
+.section--without-padding-top {
+    padding-top: 0;
+    
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
+}
+
+.section--dark-background {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: var(--button-backgroung-color);
+}
+
+.section__title {
+    @include font(28px, 700, 1.18, 0.03em);
+    text-align: center;
+    color:var(--title-text-color);
+    margin-bottom: 30px;
+    
+    @media screen and (min-width: 1200px) {
+        @include font(36px, 700, 1.17, 0.03em);
+        margin-bottom: 50px;
+    }
+}

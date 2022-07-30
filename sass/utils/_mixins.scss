@@ -1,0 +1,10 @@
+@mixin bordered($size:2px, $color:#111111) {  
+    border: $size solid $color;
+}
+
+@mixin font($fs:14px, $fw:400, $lh:1.71, $ls:0.03em) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    letter-spacing: $ls;
+}

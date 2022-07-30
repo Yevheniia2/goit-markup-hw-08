@@ -1,0 +1,14 @@
+body {
+    font-family: Roboto,sans-serif;
+    @include font(14px, normal, 1.71, 0.03em);
+    color: var(--primary-text-color);
+    background: var(--main-background-color);
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+}
